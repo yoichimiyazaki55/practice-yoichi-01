@@ -1,11 +1,31 @@
-<!doctype html>
-<html lang="ja">
-<head>
-  <meta charset="utf-8" />
-  <title>GitHub 練習ページ</title>
-</head>
 <body>
-  <h1>GitHub 練習ページ</h1>
-  <p>これは宮﨑がGitHubの練習のために作ったページです。</p>
+  <h1>MY ROBOTS お問い合わせ（練習用）</h1>
+  <p>このフォームは Netlify を使ったテスト用フォームです。</p>
+
+  <form name="contact" method="POST" data-netlify="true">
+    <!-- Netlify がフォーム名を認識するための hidden -->
+    <input type="hidden" name="form-name" value="contact" />
+
+    <p>
+      <label>お名前：<br />
+        <input type="text" name="name" required />
+      </label>
+    </p>
+
+    <p>
+      <label>メールアドレス：<br />
+        <input type="email" name="email" required />
+      </label>
+    </p>
+
+    <p>
+      <label>お問い合わせ内容：<br />
+        <textarea name="message" rows="5" required></textarea>
+      </label>
+    </p>
+
+    <p>
+      <button type="submit">送信する</button>
+    </p>
+  </form>
 </body>
-</html>
